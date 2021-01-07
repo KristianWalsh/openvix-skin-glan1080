@@ -1,0 +1,575 @@
+<!--  Skin:  Glan skin By KrisW -->
+<!--  SKIN FILE -->
+<!--  This skin is OpenSource. Anyone can modify it and use it in other images.  -->
+<!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!  -->
+<!--  Do whatever you want with this skin, but don't tell it's yours, or your idea!  -->
+
+<skin>
+  <screen name="Glan_ClockAndTopBar">
+    <eLabel position="0,0" size="240,90" backgroundColor="piconBoxBg" zPosition="-10"/>
+    <eLabel position="240,0" size="1880,90" backgroundColor="barBg" zPosition="-10"/>
+    <eLabel position="0,90" size="1920,1" backgroundColor="hairline" zPosition="-10"/>
+    <widget source="global.CurrentTime" render="Label" position="0,0" size="240,90" font="Regular500;50" foregroundColor="textMid" backgroundColor="piconBoxBg" transparent="1" noWrap="1" halign="center" valign="center" zPosition="2">
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+  </screen>
+
+  <screen name="Glan_WideMenu">
+    <panel name="Glan_ClockAndTopBar" />
+    <eLabel position="120,160" size="120,770" backgroundColor="infoBoxBgSide" zPosition="0"/>
+    <eLabel position="240,160" size="1200,770" backgroundColor="infoBoxBgMain" zPosition="0"/>
+    <eLabel position="120,930" size="1320,1" backgroundColor="hairline" zPosition="0"/>
+    <widget source="Title" render="Label" position="260,0" size="1720,90" font="Regular350;40" foregroundColor="textHigh" backgroundColor="barBg" transparent="1" halign="left" valign="center" zPosition="2"/>
+  </screen>
+
+  <screen name="Glan_HorizontalColourButtonsEPG">
+    <ePixmap position="870,730" size="250,40" pixmap="common/redPromptBg.png" alphatest="blend" zPosition="3"/>
+    <ePixmap position="1030,730" size="250,40" pixmap="common/greenPromptBg.png" alphatest="blend" zPosition="3"/>
+    <ePixmap position="1390,730" size="250,40" pixmap="common/yellowPromptBg.png" alphatest="blend" zPosition="3"/>
+    <ePixmap position="1650,730" size="250,40" pixmap="common/bluePromptBg.png" alphatest="blend" zPosition="3"/>
+    <widget name="key_red" position="910,730" size="210,40" font="Regular500;30" foregroundColor="redButtonText" backgroundColor="solidBg" transparent="1" halign="left" valign="center" noWrap="1" zPosition="4"/>
+    <widget name="key_green" position="1170,730" size="210,40" font="Regular500;30" foregroundColor="greenButtonText" backgroundColor="solidBg" transparent="1" halign="left" valign="center" noWrap="1" zPosition="4"/>
+    <widget name="key_yellow" position="1430,730" size="210,40" font="Regular500;30" foregroundColor="yellowButtonText" backgroundColor="solidBg" transparent="1" halign="left" valign="center" noWrap="1" zPosition="4"/>
+    <widget name="key_blue" position="1690,730" size="210,40" font="Regular500;30" foregroundColor="blueButtonText" backgroundColor="solidBg" transparent="1" halign="left" valign="center" noWrap="1" zPosition="4"/>
+  </screen>
+
+  <screen name="Glan_VerticalColourButtonsBottomRight">
+    <ePixmap position="1640,820" size="250,40" pixmap="common/redPromptBg.png" alphatest="blend" zPosition="3"/>
+    <ePixmap position="1640,880" size="250,40" pixmap="common/greenPromptBg.png" alphatest="blend" zPosition="3"/>
+    <ePixmap position="1640,940" size="250,40" pixmap="common/yellowPromptBg.png" alphatest="blend" zPosition="3"/>
+    <ePixmap position="1640,1000" size="250,40" pixmap="common/bluePromptBg.png" alphatest="blend" zPosition="3"/>
+    <widget name="key_red" position="1680,820" size="210,40" font="Regular500;30" foregroundColor="redButtonText" backgroundColor="solidBg" transparent="1" halign="left" valign="center" noWrap="1" zPosition="4"/>
+    <widget name="key_green" position="1680,880" size="210,40" font="Regular500;30" foregroundColor="greenButtonText" backgroundColor="solidBg" transparent="1" halign="left" valign="center" noWrap="1" zPosition="4"/>
+    <widget name="key_yellow" position="1680,940" size="210,40" font="Regular500;30" foregroundColor="yellowButtonText" backgroundColor="solidBg" transparent="1" halign="left" valign="center" noWrap="1" zPosition="4"/>
+    <widget name="key_blue" position="1680,1000" size="210,40" font="Regular500;30" foregroundColor="blueButtonText" backgroundColor="solidBg" transparent="1" halign="left" valign="center" noWrap="1" zPosition="4"/>
+  </screen>
+
+
+  <screen name="Glan_HorizontalColourButtonsBottomBar">
+    <eLabel position="0,960" size="1920,120" backgroundColor="barBg" zPosition="-10"/>
+    <eLabel position="0,959" size="1920,1" backgroundColor="hairline" zPosition="-10"/>
+    <ePixmap position="120,1000" size="250,40" pixmap="common/redPromptBg.png" alphatest="blend" zPosition="3"/>
+    <ePixmap position="380,1000" size="250,40" pixmap="common/greenPromptBg.png" alphatest="blend" zPosition="3"/>
+    <ePixmap position="640,1000" size="250,40" pixmap="common/yellowPromptBg.png" alphatest="blend" zPosition="3"/>
+    <ePixmap position="900,1000" size="250,40" pixmap="common/bluePromptBg.png" alphatest="blend" zPosition="3"/>
+    <widget name="key_red" position="160,1000" size="210,40" font="Regular500;30" foregroundColor="redButtonText" backgroundColor="solidBg" transparent="1" halign="left" valign="center" noWrap="1" zPosition="4"/>
+    <widget name="key_green" position="420,1000" size="210,40" font="Regular500;30" foregroundColor="greenButtonText" backgroundColor="solidBg" transparent="1" halign="left" valign="center" noWrap="1" zPosition="4"/>
+    <widget name="key_yellow" position="680,1000" size="210,40" font="Regular500;30" foregroundColor="yellowButtonText" backgroundColor="solidBg" transparent="1" halign="left" valign="center" noWrap="1" zPosition="4"/>
+    <widget name="key_blue" position="940,1000" size="210,40" font="Regular500;30" foregroundColor="blueButtonText" backgroundColor="solidBg" transparent="1" halign="left" valign="center" noWrap="1" zPosition="4"/>
+  </screen>
+
+
+  <screen name="Glan_ConfigMenuScreen">
+    <panel name="Glan_ClockAndTopBar" />
+    <eLabel position="240,160" size="1200,770" backgroundColor="infoBoxBgMain" zPosition="0"/>
+    <eLabel position="1440,160" size="420,490" backgroundColor="infoBoxBgSide" zPosition="0"/>
+    <eLabel position="1440,650" size="420,1" backgroundColor="hairline" zPosition="0"/>
+    <eLabel position="1440,651" size="420,279" backgroundColor="barBg" zPosition="0"/>
+    <eLabel position="240,930" size="1620,1" backgroundColor="hairline" zPosition="0"/>
+    <widget source="Title" render="Label" position="260,0" size="1180,90" font="Regular500;40" foregroundColor="textHigh" backgroundColor="barBg" transparent="1" halign="left" valign="center" zPosition="2" />
+  </screen>
+
+  <screen name="Glan_ConfigMenuColourButtons">
+    <ePixmap position="1460,870" size="80,50" pixmap="buttons/key_red.png" alphatest="blend" zPosition="2"/>
+    <widget source="key_red" render="Label" position="1560,870" size="190,50" objectTypes="key_red,StaticText" font="Regular500;40" foregroundColor="redButtonText" backgroundColor="barBg" transparent="1" halign="left" valign="center" noWrap="1" zPosition="2"/>
+
+    <ePixmap position="1460,810" size="80,50" pixmap="buttons/key_green.png" alphatest="blend" zPosition="2"/>
+    <widget source="key_green" render="Label" position="1560,810" size="190,50" objectTypes="key_green,StaticText" font="Regular500;40" foregroundColor="greenButtonText" backgroundColor="barBg" transparent="1" halign="left" valign="center" noWrap="1" zPosition="12"/>
+    
+    <ePixmap objectTypes="key_yellow,StaticText" position="1460,750" size="80,50" pixmap="buttons/key_yellow.png" alphatest="blend" zPosition="2">
+      <convert type="ConditionalShowHide"/>
+    </ePixmap>
+    <widget source="key_yellow" render="Label" position="1560,750" size="190,50" objectTypes="key_yellow,StaticText" font="Regular500;40" foregroundColor="yellowButtonText" backgroundColor="barBg" transparent="1" halign="left" valign="center" noWrap="1" zPosition="12"/>
+    
+    <ePixmap objectTypes="key_blue,StaticText" position="1460,690" size="80,50" pixmap="buttons/key_blue.png" alphatest="blend" zPosition="2">
+      <convert type="ConditionalShowHide"/>
+    </ePixmap>
+    <widget source="key_blue" render="Label" position="1560,690" size="190,50" objectTypes="key_blue,StaticText" font="Regular500;40" foregroundColor="blueButtonText" backgroundColor="barBg" transparent="1" halign="left" valign="center" noWrap="1" zPosition="12"/>
+  </screen>
+
+  <screen name="Glan_ConfigMenuOkCancelButtonLabels">
+    <eLabel text="Cancel" position="1560,870" size="190,50" font="Regular500;40" foregroundColor="redButtonText" backgroundColor="barBg" transparent="1" halign="left" valign="center" noWrap="1" zPosition="2"/>
+    <eLabel text="OK" position="1560,810" size="190,50" font="Regular500;40" foregroundColor="greenButtonText" backgroundColor="barBg" transparent="1" halign="left" valign="center" noWrap="1" zPosition="12"/>
+  </screen>
+
+  <screen name="Glan_ConfigMenuRedGreenButtons">
+    <ePixmap position="1460,870" size="80,50" pixmap="buttons/key_red.png" alphatest="blend" zPosition="2"/>
+    <ePixmap position="1460,810" size="80,50" pixmap="buttons/key_green.png" alphatest="blend" zPosition="2"/>
+  </screen>
+
+  <screen name="Glan_ConfigMenuOkCancelButtons">
+    <panel name="Glan_ConfigMenuRedGreenButtons"/>
+    <panel name="Glan_ConfigMenuOkCancelButtonLabels"/>
+  </screen>
+
+  <screen name="Glan_ConfigMenuScreenRedExitButtonPrompt">
+    <ePixmap position="1460,870" size="80,50" pixmap="buttons/key_red.png" alphatest="blend" zPosition="2"/>
+    <eLabel text="Exit" position="1560,870" size="190,50" font="Regular500;40" foregroundColor="redButtonText" backgroundColor="barBg" transparent="1" halign="left" valign="center" noWrap="1" zPosition="2"/>
+  </screen>
+
+  <screen name="DownloadBar">
+    <panel name="Glan_ClockAndTopBar" />
+    <eLabel position="360,450" size="1200,180" backgroundColor="infoBoxBgMain" zPosition="0"/>
+    <eLabel position="360,630" size="1200,1" backgroundColor="hairline" zPosition="0"/>
+    <widget name="action" position="260,0" size="1180,90" font="Regular500;40" foregroundColor="textHigh" backgroundColor="barBg" transparent="1" halign="left" valign="center" zPosition="2" />
+
+    <widget name="progress" position="400,490" size="1120,5" foregroundColor="accentHigh" transparent="1" zPosition="2"/>
+    <widget name="status" position="400,560" size="1120,90" font="Regular350;40" foregroundColor="textMid" backgroundColor="infoBoxBgMain" halign="left" valign="center" transparent="1" zPosition="2"/>
+  </screen>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <screen name="button_background_1372x200">
+    <eLabel position="268,751" size="1372,200" backgroundColor="settings_panel_background" zPosition="-1"/>
+  </screen>
+  <screen name="settings_background_1372x200">
+    <eLabel position="268,327" size="1372,480" backgroundColor="settings_panel_background" zPosition="-1"/>
+    <eLabel position="268,267" size="1372,60" backgroundColor="settings_panel_titlebar" zPosition="-1"/>
+    <widget source="Title" render="Label" position="278,267" size="1362,60" font="Narrow500;42" foregroundColor="settings_title_font_color" backgroundColor="menubackground" transparent="1" halign="left" valign="center" zPosition="4"/>
+  </screen>
+  <screen name="settings_background_1372x545">
+    <eLabel position="268,272" size="1372,545" backgroundColor="settings_panel_background" zPosition="-1"/>
+    <eLabel position="268,212" size="1372,60" backgroundColor="settings_panel_titlebar" zPosition="-1"/>
+    <widget source="Title" render="Label" position="278,212" size="1362,60" font="Narrow500;42" foregroundColor="settings_title_font_color" backgroundColor="menubackground" transparent="1" halign="left" valign="center" zPosition="4"/>
+  </screen>
+
+
+  <screen name="Halo_Info_NavigationBar">
+    <eLabel position="0,0" size="1920,50" backgroundColor="trans2" zPosition="-1"/>
+    <eLabel position="30,5" size="6,40" backgroundColor="bar_red" zPosition="1"/>
+    <widget name="key_red" position="55,10" size="190,40" font="buttons;22" foregroundColor="#CFD0D2" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="2"/>
+    <eLabel position="225,5" size="6,40" backgroundColor="bar_green" zPosition="1"/>
+    <widget name="key_green" position="250,10" size="190,40" font="buttons;22" foregroundColor="#CFD0D2" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="2"/>
+    <eLabel position="425,5" size="6,40" backgroundColor="bar_yellow" zPosition="1"/>
+    <widget name="key_yellow" position="450,10" size="190,40" font="buttons;22" foregroundColor="#CFD0D2" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="2"/>
+    <eLabel position="625,5" size="6,40" backgroundColor="bar_blue" zPosition="1"/>
+    <widget name="key_blue" position="650,10" size="190,40" font="buttons;22" foregroundColor="#CFD0D2" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="2"/>
+  </screen>
+
+  <screen name="Halo_Info_NavigationBar_EpgGraph">
+    <eLabel position="10,680" size="6,40" backgroundColor="bar_red" zPosition="12"/>
+    <widget name="key_red" position="35,685" size="190,40" font="Regular350;28" foregroundColor="#CFD0D2" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="12"/>
+    <eLabel position="254,680" size="6,40" backgroundColor="bar_green" zPosition="12"/>
+    <widget name="key_green" position="280,685" size="190,40" font="Regular350;28" foregroundColor="#CFD0D2" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="12"/>
+    <eLabel position="495,680" size="6,40" backgroundColor="bar_yellow" zPosition="12"/>
+    <widget name="key_yellow" position="520,685" size="190,40" font="Regular350;28" foregroundColor="#CFD0D2" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="12"/>
+    <eLabel position="735,680" size="6,40" backgroundColor="bar_blue" zPosition="12"/>
+    <widget name="key_blue" position="760,685" size="190,40" font="Regular350;28" foregroundColor="#CFD0D2" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="12"/>
+  </screen>
+  <screen name="Halo_Info_NavigationBar_InfoBarGraph">
+    <eLabel position="10,637" size="6,40" backgroundColor="bar_red" zPosition="12"/>
+    <widget name="key_red" position="35,642" size="190,40" font="Regular350;28" foregroundColor="#CFD0D2" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="12"/>
+    <eLabel position="254,637" size="6,40" backgroundColor="bar_green" zPosition="12"/>
+    <widget name="key_green" position="280,642" size="190,40" font="Regular350;28" foregroundColor="#CFD0D2" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="12"/>
+    <eLabel position="495,637" size="6,40" backgroundColor="bar_yellow" zPosition="12"/>
+    <widget name="key_yellow" position="520,642" size="190,40" font="Regular350;28" foregroundColor="#CFD0D2" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="12"/>
+    <eLabel position="735,637" size="6,40" backgroundColor="bar_blue" zPosition="12"/>
+    <widget name="key_blue" position="760,642" size="190,40" font="Regular350;28" foregroundColor="#CFD0D2" backgroundColor="menubackground" transparent="1" halign="left" valign="center" noWrap="1" zPosition="12"/>
+  </screen>
+  <screen name="Halo_InfoBar_BG">
+    <eLabel position="0,680" size="1920,400" backgroundColor="infobar_panel" zPosition="-1"/>
+    <eLabel position="0,580" size="1920,100" backgroundColor="trans2" zPosition="-1"/>
+    <eLabel position="642,680" size="2,400" backgroundColor="infobar_panel_divider" zPosition="1"/>
+    <eLabel position="778,815" size="1100,2" backgroundColor="infobar_panel_divider" zPosition="1"/>
+    <eLabel position="1280,580" size="2,100" backgroundColor="infobar_Top_panel_divider" zPosition="1"/>
+  </screen>
+  <screen name="Halo_2ndInfoBar_BG">
+    <eLabel position="0,680" size="1920,400" backgroundColor="infobar_panel" zPosition="-1"/>
+    <eLabel position="0,580" size="1920,100" backgroundColor="trans2" zPosition="-1"/>
+    <eLabel position="960,680" size="2,400" backgroundColor="infobar_panel_divider" zPosition="1"/>
+    <eLabel position="145,815" size="750,2" backgroundColor="infobar_panel_divider" zPosition="1"/>
+    <eLabel position="1100,815" size="750,2" backgroundColor="infobar_panel_divider" zPosition="1"/>
+    <eLabel position="1280,580" size="2,100" backgroundColor="infobar_Top_panel_divider" zPosition="1"/>
+  </screen>
+  <screen name="Halo_ChannelSelection_BG">
+    <eLabel position="0,680" size="1920,400" backgroundColor="infobar_panel" zPosition="-1"/>
+    <eLabel position="0,580" size="1920,100" backgroundColor="trans2" zPosition="-1"/>
+    <eLabel position="800,680" size="2,400" backgroundColor="infobar_panel_divider" zPosition="10"/>
+    <eLabel position="912,815" size="960,2" backgroundColor="infobar_panel_divider" zPosition="1"/>
+    <eLabel position="1360,580" size="3,100" backgroundColor="infobar_Top_panel_divider" zPosition="1"/>
+    <eLabel text="NEXT @" position="825,645" size="100,36" font="Regular250;28" foregroundColor="infobar_nextlater" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="2"/>
+    <eLabel text="LATER @" position="1380,645" size="120,36" font="Regular250;28" foregroundColor="infobar_nextlater" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="2"/>
+  </screen>
+  <screen name="Halo_EpgSelection_BG">
+    <eLabel position="0,680" size="1920,400" backgroundColor="#292D31" zPosition="-1"/>
+    <eLabel position="0,580" size="1920,100" backgroundColor="#737D7D7D" zPosition="-1"/>
+    <eLabel position="800,680" size="2,400" backgroundColor="#555657" zPosition="10"/>
+    <eLabel position="912,815" size="960,2" backgroundColor="#555657" zPosition="1"/>
+    <eLabel position="1360,580" size="3,100" backgroundColor="#000000" zPosition="1"/>
+  </screen>
+  <screen name="StatusIcons_Bg_Blue">
+    <eLabel position="1350,607" size="106,53" backgroundColor="#0066FF" zPosition="3"/>
+    <eLabel position="1469,607" size="106,53" backgroundColor="#0066FF" zPosition="3"/>
+    <eLabel position="1589,607" size="106,53" backgroundColor="#0066FF" zPosition="3"/>
+    <eLabel position="1708,607" size="106,53" backgroundColor="#0066FF" zPosition="3"/>
+
+
+  </screen>
+  <screen name="2ndInfobarStatusIcons">
+
+    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/h264.png" position="1350,607" size="106,53" alphatest="blend" zPosition="4">
+      <convert type="ServiceInfo">IsHD</convert>
+      <convert type="ConditionalShowHide"/>
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/mpeg2.png" position="1350,607" size="106,53" alphatest="blend" zPosition="4">
+      <convert type="ServiceInfo">IsSD</convert>
+      <convert type="ConditionalShowHide"/>
+    </widget>
+
+    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/1080.png" position="1469,607" size="106,53" alphatest="blend" zPosition="4">
+      <convert type="ServiceInfo">Is1080</convert>
+      <convert type="ConditionalShowHide"/>
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/720.png" position="1469,607" size="106,53" alphatest="blend" zPosition="4">
+      <convert type="ServiceInfo">Is720</convert>
+      <convert type="ConditionalShowHide"/>
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/576.png" position="1469,607" size="106,53" alphatest="blend" zPosition="4">
+      <convert type="ServiceInfo">Is576</convert>
+      <convert type="ConditionalShowHide"/>
+    </widget>
+
+    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/480.png" position="1469,607" size="106,53" alphatest="blend" zPosition="4">
+      <convert type="ServiceInfo">Is480</convert>
+      <convert type="ConditionalShowHide"/>
+    </widget>
+
+
+    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/dolbyprologic.png" position="1708,607" size="106,53" alphatest="blend" zPosition="4">
+      <convert type="ServiceInfo">IsStereo</convert>
+      <convert type="ConditionalShowHide"/>
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/dolbydigital.png" position="1708,607" size="106,53" alphatest="blend" zPosition="4">
+      <convert type="ServiceInfo">IsMultichannel</convert>
+      <convert type="ConditionalShowHide"/>
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/2.0.png" position="1589,607" size="106,53" alphatest="blend" zPosition="4">
+      <convert type="ServiceInfo">IsStereo</convert>
+      <convert type="ConditionalShowHide"/>
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="icons/5.1.png" position="1589,607" size="106,53" alphatest="blend" zPosition="4">
+      <convert type="ServiceInfo">IsMultichannel</convert>
+      <convert type="ConditionalShowHide"/>
+    </widget>
+    <!--
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/169.png" position="1708,607" size="106,53" alphatest="blend" zPosition="4">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/43.png" position="1708,607" size="106,53" alphatest="blend" zPosition="4">
+			<convert type="ServiceInfo">IsNotWidescreen</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>  -->
+
+
+  </screen>
+
+  <screen name="TunerStatus">
+    <widget source="session.TunerInfo" render="FixedLabel" text="A" position="10,580" size="30,25" font="Regular350;18" foregroundColor="Now_Next_Text1" backgroundColor="Now_Next_Color1" halign="center" valign="top" zPosition="1" transparent="0">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">1</convert>
+      <convert type="ConditionalShowHide"/>
+    </widget>
+
+
+    <widget source="session.FrontendInfo" render="FixedLabel" text="A" position="10,580" size="30,25" font="Regular350;18" foregroundColor="Now_Next_Text1" backgroundColor="Now_Next_Color1" halign="center" valign="top" zPosition="2" transparent="0">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">0,0</convert>
+      <convert type="ConditionalShowHide"/>
+    </widget>
+
+
+    <widget source="session.TunerInfo" render="FixedLabel" text="B" position="10,605" size="30,25" font="Regular350;18" foregroundColor="Now_Next_Text1" backgroundColor="Now_Next_Color1" halign="center" valign="top" zPosition="1" transparent="0">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">2</convert>
+      <convert type="ConditionalShowHide"/>
+    </widget>
+
+
+    <widget source="session.FrontendInfo" render="FixedLabel" text="B" position="10,605" size="30,25" font="Regular350;18" foregroundColor="Now_Next_Text1" backgroundColor="Now_Next_Color1" halign="center" valign="top" zPosition="2" transparent="0">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">1,1</convert>
+      <convert type="ConditionalShowHide"/>
+    </widget>
+
+    <widget source="session.TunerInfo" render="FixedLabel" text="C" position="10,630" size="30,25" font="Regular350;18" foregroundColor="Now_Next_Text1" backgroundColor="Now_Next_Color1" halign="center" valign="top" zPosition="1" transparent="0">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">4</convert>
+      <convert type="ConditionalShowHide"/>
+    </widget>
+
+
+    <widget source="session.FrontendInfo" render="FixedLabel" text="C" position="10,630" size="30,25" font="Regular350;18" foregroundColor="Now_Next_Text1" backgroundColor="Now_Next_Color1" halign="center" valign="top" zPosition="2" transparent="0">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">2,2</convert>
+      <convert type="ConditionalShowHide"/>
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="D" position="10,655" size="30,25" font="Regular350;18" foregroundColor="Now_Next_Text1" backgroundColor="Now_Next_Color1" halign="center" valign="top" zPosition="1" transparent="0">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">8</convert>
+      <convert type="ConditionalShowHide"/>
+    </widget>
+
+
+    <widget source="session.FrontendInfo" render="FixedLabel" text="D" position="10,655" size="30,25" font="Regular350;18" foregroundColor="Now_Next_Text1" backgroundColor="Now_Next_Color1" halign="center" valign="top" zPosition="2" transparent="0">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">3,3</convert>
+      <convert type="ConditionalShowHide"/>
+    </widget>
+  </screen>
+
+
+
+  <screen name="messagebox_BG">
+    <eLabel position="550,345" size="820,390" backgroundColor="settings_panel_background" zPosition="-3"/>
+  </screen>
+  <screen name="settings_background1">
+
+    <eLabel position="140,300" size="1660,480" backgroundColor="settings_panel_background" zPosition="-1"/>
+    <eLabel position="140,300" size="1080,60" backgroundColor="settings_panel_titlebar" zPosition="1"/>
+    <eLabel position="1220,300" size="20,480" backgroundColor="settings_panel_dividershadow" zPosition="2"/>
+    <eLabel position="1220,300" size="10,480" backgroundColor="settings_panel_divider" zPosition="3"/>
+  </screen>
+  <screen name="settings_background2">
+    <eLabel position="190,330" size="1540,520" backgroundColor="settings_panel_background" zPosition="-1"/>
+    <eLabel position="190,270" size="1540,60" backgroundColor="settings_panel_titlebar" zPosition="1"/>
+    <eLabel position="960,330" size="20,520" backgroundColor="settings_panel_dividershadow" zPosition="2"/>
+    <eLabel position="960,330" size="10,520" backgroundColor="settings_panel_divider" zPosition="3"/>
+  </screen>
+  <screen name="settings_background3">
+    <eLabel position="290,300" size="1340,480" backgroundColor="settings_panel_background" zPosition="-1"/>
+    <eLabel position="290,300" size="940,60" backgroundColor="settings_panel_titlebar" zPosition="1"/>
+    <eLabel position="1230,300" size="20,480" backgroundColor="settings_panel_dividershadow" zPosition="2"/>
+    <eLabel position="1230,300" size="10,480" backgroundColor="settings_panel_divider" zPosition="3"/>
+  </screen>
+  <screen name="settings_background4">
+    <eLabel position="195,300" size="1435,480" backgroundColor="settings_panel_background" zPosition="-1"/>
+    <eLabel position="195,300" size="455,60" backgroundColor="settings_panel_titlebar" zPosition="1"/>
+    <eLabel position="1230,300" size="20,480" backgroundColor="settings_panel_dividershadow" zPosition="2"/>
+    <eLabel position="650,300" size="20,480" backgroundColor="settings_panel_dividershadow" zPosition="2"/>
+    <eLabel position="1230,300" size="10,480" backgroundColor="settings_panel_divider" zPosition="3"/>
+    <eLabel position="650,300" size="10,480" backgroundColor="settings_panel_divider" zPosition="3"/>
+    <widget source="Title" render="Label" position="195,300" size="455,60" font="Narrow500;42" foregroundColor="settings_title_font_color" backgroundColor="menubackground" transparent="1" halign="left" valign="center" zPosition="4"/>
+  </screen>
+
+  <screen name="settings_background5">
+    <eLabel position="640,300" size="640,550" backgroundColor="settings_panel_background" zPosition="-1"/>
+    <eLabel position="640,241" size="640,60" backgroundColor="settings_panel_titlebar" zPosition="1"/>
+    <widget source="Title" render="Label" position="655,241" size="625,60" font="Narrow500;42" foregroundColor="settings_title_font_color" backgroundColor="menubackground" transparent="1" halign="left" valign="center" zPosition="4"/>
+
+  </screen>
+
+  <screen name="background6_4_Buttons">
+    <eLabel position="327,876" size="305,60" backgroundColor="Button_Background" zPosition="1"/>
+    <widget name="key_red" position="327,876" size="305,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="5"/>
+    <eLabel position="337,886" size="6,40" backgroundColor="bar_red" zPosition="3"/>
+
+    <eLabel position="648,876" size="305,60" backgroundColor="Button_Background" zPosition="1"/>
+    <widget name="key_green" position="648,876" size="305,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="5"/>
+    <eLabel position="658,886" size="6,40" backgroundColor="bar_green" zPosition="3"/>
+    <eLabel position="961,876" size="305,60" backgroundColor="Button_Background" zPosition="1"/>
+    <widget name="key_yellow" position="961,876" size="305,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="5"/>
+    <eLabel position="971,886" size="6,40" backgroundColor="bar_yellow" zPosition="3"/>
+    <eLabel position="1288,876" size="305,60" backgroundColor="Button_Background" zPosition="1"/>
+    <widget name="key_blue" position="1288,876" size="305,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="5"/>
+    <eLabel position="1298,886" size="6,40" backgroundColor="bar_blue" zPosition="3"/>
+
+  </screen>
+  <screen name="background6_4_Buttons_Source">
+    <eLabel position="327,876" size="305,60" backgroundColor="Button_Background" zPosition="1"/>
+    <widget source="key_red" render="Label" position="327,876" size="305,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="5"/>
+    <eLabel position="337,886" size="6,40" backgroundColor="bar_red" zPosition="3"/>
+
+    <eLabel position="648,876" size="305,60" backgroundColor="Button_Background" zPosition="1"/>
+    <widget source="key_green" render="Label" position="648,876" size="305,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="5"/>
+    <eLabel position="658,886" size="6,40" backgroundColor="bar_green" zPosition="3"/>
+    <eLabel position="961,876" size="305,60" backgroundColor="Button_Background" zPosition="1"/>
+    <widget source="key_yellow" render="Label" position="961,876" size="305,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="5"/>
+    <eLabel position="971,886" size="6,40" backgroundColor="bar_yellow" zPosition="3"/>
+    <eLabel position="1288,876" size="305,60" backgroundColor="Button_Background" zPosition="1"/>
+    <widget source="key_blue" render="Label" position="1288,876" size="305,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="5"/>
+    <eLabel position="1298,886" size="6,40" backgroundColor="bar_blue" zPosition="3"/>
+
+  </screen>
+
+  <screen name="background6_3_Buttons">
+    <eLabel position="517,876" size="305,60" backgroundColor="Button_Background" zPosition="1"/>
+    <eLabel position="838,876" size="305,60" backgroundColor="Button_Background" zPosition="1"/>
+    <eLabel position="1158,876" size="305,60" backgroundColor="Button_Background" zPosition="1"/>
+
+    <eLabel position="527,886" size="6,40" backgroundColor="bar_red" zPosition="3"/>
+    <widget name="key_red" position="517,876" size="305,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="5"/>
+
+    <eLabel position="848,886" size="6,40" backgroundColor="bar_green" zPosition="3"/>
+    <widget name="key_green" position="838,876" size="305,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="5"/>
+
+    <eLabel position="1168,886" size="6,40" backgroundColor="bar_yellow" zPosition="3"/>
+    <widget name="key_yellow" position="1158,876" size="305,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="5"/>
+
+  </screen>
+  <screen name="background6_3_Buttons_Source">
+    <eLabel position="517,876" size="305,60" backgroundColor="Button_Background" zPosition="1"/>
+    <eLabel position="838,876" size="305,60" backgroundColor="Button_Background" zPosition="1"/>
+    <eLabel position="1158,876" size="305,60" backgroundColor="Button_Background" zPosition="1"/>
+
+    <eLabel position="527,886" size="6,40" backgroundColor="bar_red" zPosition="3"/>
+    <widget source="key_red" render="Label" position="517,876" size="305,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="5"/>
+
+    <eLabel position="848,886" size="6,40" backgroundColor="bar_green" zPosition="3"/>
+    <widget source="key_green" render="Label" position="838,876" size="305,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="5"/>
+
+    <eLabel position="1168,886" size="6,40" backgroundColor="bar_yellow" zPosition="3"/>
+    <widget source="key_yellow" render="Label" position="1158,876" size="305,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="5"/>
+
+  </screen>
+
+  <screen name="background6_2_Buttons">
+
+    <eLabel position="608,876" size="305,60" backgroundColor="Button_Background" zPosition="1"/>
+    <eLabel position="1021,876" size="305,60" backgroundColor="Button_Background" zPosition="1"/>
+
+    <eLabel position="618,886" size="6,40" backgroundColor="bar_red" zPosition="3"/>
+    <widget name="key_red" position="608,876" size="305,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="5"/>
+    <eLabel position="1031,886" size="6,40" backgroundColor="bar_green" zPosition="3"/>
+    <widget name="key_green" position="1021,876" size="305,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="5"/>
+  </screen>
+
+  <screen name="background6_2_Buttons_Source">
+
+    <eLabel position="608,876" size="305,60" backgroundColor="Button_Background" zPosition="1"/>
+    <eLabel position="1021,876" size="305,60" backgroundColor="Button_Background" zPosition="1"/>
+
+    <eLabel position="618,886" size="6,40" backgroundColor="bar_red" zPosition="3"/>
+    <widget source="key_red" render="Label" position="608,876" size="305,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="5"/>
+    <eLabel position="1031,886" size="6,40" backgroundColor="bar_green" zPosition="3"/>
+    <widget source="key_green" render="Label" position="1021,876" size="305,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="5"/>
+  </screen>
+
+  <screen name="background6_1_Button">
+
+    <eLabel position="608,876" size="305,60" backgroundColor="Button_Background" zPosition="1"/>
+
+
+    <eLabel position="618,886" size="6,40" backgroundColor="bar_red" zPosition="3"/>
+    <widget name="key_red" position="608,876" size="305,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="5"/>
+  </screen>
+
+  <screen name="background6_1_Buttons_Source">
+
+    <eLabel position="608,876" size="305,60" backgroundColor="Button_Background" zPosition="1"/>
+
+
+    <eLabel position="618,886" size="6,40" backgroundColor="bar_red" zPosition="3"/>
+    <widget source="key_red" render="Label" position="608,876" size="305,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="5"/>
+  </screen>
+
+
+
+
+
+  <!-- BIG LIST END -->
+
+  <screen name="settings_extrainfo">
+    <eLabel position="1260,420" size="340,60" backgroundColor="settings_panel_infopanels" zPosition="3"/>
+    <eLabel position="1260,505" size="340,60" backgroundColor="settings_panel_infopanels" zPosition="3"/>
+    <eLabel position="1260,590" size="340,60" backgroundColor="settings_panel_infopanels" zPosition="3"/>
+    <eLabel position="1260,675" size="340,60" backgroundColor="settings_panel_infopanels" zPosition="3"/>
+  </screen>
+
+  <screen name="info_menu_addon_background3">
+    <eLabel text="INFO" position="1250,300" size="190,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="5"/>
+    <eLabel text="MENU" position="1440,300" size="190,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="5"/>
+  </screen>
+
+  <screen name="MenuRed1Panel">
+    <eLabel position="1585,430" size="6,40" backgroundColor="#8B276A" zPosition="3"/>
+    <widget name="key_red" position="1280,420" size="300,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="5"/>
+  </screen>
+  <screen name="MenuGreen1Panel">
+    <eLabel position="1585,515" size="6,40" backgroundColor="#66CC33" zPosition="3"/>
+    <widget name="key_green" position="1280,505" size="300,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="5"/>
+  </screen>
+  <screen name="MenuYellow1Panel">
+    <eLabel position="1585,602" size="6,40" backgroundColor="#E1A447" zPosition="3"/>
+    <widget name="key_yellow" position="1280,590" size="300,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="5"/>
+  </screen>
+  <screen name="MenuBlue1Panel">
+    <eLabel position="1585,687" size="6,40" backgroundColor="#0066CC" zPosition="3"/>
+    <widget name="key_blue" position="1280,675" size="300,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="5"/>
+  </screen>
+  <screen name="MenuRed2Panel">
+    <eLabel position="1585,430" size="6,40" backgroundColor="#8B276A" zPosition="3"/>
+    <widget source="key_red" render="Label" position="1280,420" size="300,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="5"/>
+  </screen>
+  <screen name="MenuGreen2Panel">
+    <eLabel position="1585,515" size="6,40" backgroundColor="#66CC33" zPosition="3"/>
+    <widget source="key_green" render="Label" position="1280,505" size="300,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="5"/>
+  </screen>
+  <screen name="MenuYellow2Panel">
+    <eLabel position="1585,602" size="6,40" backgroundColor="#E1A447" zPosition="3"/>
+    <widget source="key_yellow" render="Label" position="1280,590" size="300,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="5"/>
+  </screen>
+  <screen name="MenuBlue2Panel">
+    <eLabel position="1585,687" size="6,40" backgroundColor="#0066CC" zPosition="3"/>
+    <widget source="key_blue" render="Label" position="1280,675" size="300,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="left" valign="center" transparent="1" zPosition="5"/>
+  </screen>
+  <screen name="info_panel">
+    <eLabel position="475,165" size="975,60" backgroundColor="settings_panel_titlebar" zPosition="-1"/>
+    <eLabel position="475,225" size="975,685" backgroundColor="settings_panel_background" zPosition="-1"/>
+    <widget source="Title" render="Label" position="495,165" size="605,60" font="Narrow500;42" foregroundColor="settings_title_font_color" backgroundColor="menubackground" transparent="1" halign="left" valign="center" zPosition="4"/>
+  </screen>
+  <screen name="title1">
+    <widget source="Title" render="Label" position="160,300" size="605,60" font="Narrow500;42" foregroundColor="settings_title_font_color" backgroundColor="menubackground" transparent="1" halign="left" valign="center" zPosition="4"/>
+  </screen>
+  <screen name="title2">
+    <widget source="Title" render="Label" position="210,270" size="605,60" font="Narrow500;42" foregroundColor="settings_title_font_color" backgroundColor="menubackground" transparent="1" halign="left" valign="center" zPosition="4"/>
+  </screen>
+  <screen name="title3">
+    <widget source="Title" render="Label" position="300,300" size="940,60" font="Narrow500;42" foregroundColor="settings_title_font_color" backgroundColor="menubackground" transparent="1" halign="left" valign="center" zPosition="4"/>
+  </screen>
+  <screen name="description2">
+    <widget name="info" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=3,always=0,oneshot=1,startdelay=5000,wrap" position="1015,330" size="700,520" font="Regular250;28" foregroundColor="description_fontcolor" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="4"/>
+  </screen>
+  <screen name="description3">
+    <widget source="description" render="Label" position="1260,315" size="340,315" font="Regular250;28" foregroundColor="description_fontcolor" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="10"/>
+  </screen>
+  <screen name="settings_config2">
+    <widget name="config" position="670,315" size="555,300" font="Regular250;36" halign="center" valign="center" itemHeight="60" selectionPixmap="settings/List_On_1080x84.png" backgroundPixmap="settings/List_Off_1080x84.png" foregroundColor="settings_lists_font_foregroundcolor" foregroundColorSelected="settings_lists_font_foregroundcolor_selected" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showNever" zPosition="4"/>
+  </screen>
+  <screen name="settings_menu1">
+    <widget name="menu" position="140,360" size="1080,420" font="Regular250;36" halign="center" valign="center" itemHeight="60" selectionPixmap="settings/List_On_1080x84.png" backgroundPixmap="settings/List_Off_1080x84.png" foregroundColor="settings_lists_font_foregroundcolor" foregroundColorSelected="settings_lists_font_foregroundcolor_selected" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showNever" zPosition="4"/>
+  </screen>
+  <screen name="settings_list4">
+    <widget name="list" position="140,360" size="1080,420" font="Regular250;36" halign="center" valign="center" itemHeight="60" selectionPixmap="settings/List_On_1080x84.png" backgroundPixmap="settings/List_Off_1080x84.png" foregroundColor="settings_lists_font_foregroundcolor" foregroundColorSelected="settings_lists_font_foregroundcolor_selected" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showNever" zPosition="4"/>
+  </screen>
+  <screen name="settings_list1">
+    <widget name="list" position="190,330" size="770,520" font="Regular250;36" halign="center" valign="center" itemHeight="84" selectionPixmap="settings/List_On_1080x84.png" backgroundPixmap="settings/List_Off_1080x84.png" foregroundColor="settings_lists_font_foregroundcolor" foregroundColorSelected="settings_lists_font_foregroundcolor_selected" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showNever" zPosition="4"/>
+  </screen>
+  <screen name="settings_list2">
+    <widget name="list" position="290,360" size="940,420" font="Regular250;36" halign="center" valign="center" itemHeight="84" selectionPixmap="settings/List_On_1080x84.png" backgroundPixmap="settings/List_Off_1080x84.png" foregroundColor="settings_lists_font_foregroundcolor" foregroundColorSelected="settings_lists_font_foregroundcolor_selected" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showNever" zPosition="4"/>
+  </screen>
+  <screen name="settings_list3">
+    <widget name="list" position="290,360" size="940,420" font="Regular250;36" halign="center" valign="center" itemHeight="60" selectionPixmap="settings/List_On_1080x84.png" backgroundPixmap="settings/List_Off_1080x84.png" foregroundColor="settings_lists_font_foregroundcolor" foregroundColorSelected="settings_lists_font_foregroundcolor_selected" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showNever" zPosition="4"/>
+  </screen>
+  <screen name="settings_list4">
+    <widget name="list" position="290,360" size="940,252" font="Regular250;32" halign="center" valign="center" itemHeight="84" selectionPixmap="settings/List_On_1080x84.png" backgroundPixmap="settings/List_Off_1080x84.png" foregroundColor="settings_lists_font_foregroundcolor" foregroundColorSelected="settings_lists_font_foregroundcolor_selected" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showNever" zPosition="4"/>
+  </screen>
+  <screen name="settings_menulist">
+    <widget name="menulist" position="290,360" size="940,300" font="Regular250;36" halign="center" valign="center" itemHeight="60" selectionPixmap="settings/List_On_1080x84.png" backgroundPixmap="settings/List_Off_1080x84.png" foregroundColor="settings_lists_font_foregroundcolor" foregroundColorSelected="settings_lists_font_foregroundcolor_selected" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showNever" zPosition="4"/>
+  </screen>
+</skin>
