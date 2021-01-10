@@ -55,34 +55,61 @@
 
 	
 	<screen name="TimerEditList" position="fill" flags="wfNoBorder" backgroundColor="transparent">
-		<!--<eLabel text="TimerEditList" position="center,center" size="200,20" font="Regular;20" foregroundColor="black" backgroundColor="white" halign="center" valign="center" transparent="0" zPosition="99"/>-->
-		<eLabel position="268,272" size="1372,680" backgroundColor="settings_panel_background" zPosition="-1"/>
-		<eLabel position="268,212" size="1372,60" backgroundColor="settings_panel_titlebar" zPosition="-1"/>
-		<widget source="Title" render="Label" position="288,212" size="1372,60" font="Narrow500;42" foregroundColor="settings_title_font_color" backgroundColor="menubackground" transparent="1" halign="left" valign="center" zPosition="4"/>
+    <panel name="Glan_ClockAndTopBar" />
+		<widget source="Title" render="Label" position="260,0" size="1180,90" font="Regular500;40" foregroundColor="textHigh" backgroundColor="barBg" transparent="1" halign="left" valign="center" zPosition="2" />
 
+		<eLabel position="120,120" size="120,810" backgroundColor="infoBoxBgSide" zPosition="0"/>
+    <eLabel position="240,120" size="810,810" backgroundColor="infoBoxBgMain" zPosition="0"/>
+
+    <eLabel position="1050,120" size="750,810" backgroundColor="barBg" zPosition="0"/>
+    <eLabel position="120,930" size="1680,1" backgroundColor="hairline" zPosition="0"/>
+
+		<widget name="timerlist" position="120,120"  zPosition="1"
+				size="930,810" itemHeight="120" rowSplit="70" iconMargin="20" textOffset="50,20"
+				setEventNameFont="Regular500;40" setServiceNameFont="Regular350;40" setFont="Regular250;30" 
+				foregroundColor="textMid" satPosLeft="260"
+				foregroundColorSelected="textHigh"
+				backgroundColorSelected="focusBg" backgroundColor="infoBoxBgMain"  
+				selectionPixmap="common/listBg120+1200x175Focus.png" 
+				backgroundPixmap="common/blank.png" transparent="1" scrollbarMode="showOnDemand"/>	
+<!--
+				<widget name="timerlist" position="268,272" size="1372,480"  
+				itemHeight="120" rowSplit="40" rowHeight="60" iconMargin="5" 
+				satPosLeft="300"  setEventNameFont="Regular350;34"
+				 setServiceNameFont="Regular350;34" setFont="Regular350;36" 
+				 foregroundColor="settings_lists_font_foregroundcolor"
+					foregroundColorSelected="settings_lists_font_foregroundcolor_selected" 
+					backgroundColorSelected="menubackground" backgroundColor="menubackground" 
+					 selectionPixmap="settings/List_On_1740x120.png" 
+					 backgroundPixmap="settings/List_Off_1740x120.png"
+					  transparent="1" scrollbarMode="showOnDemand"/>		
+-->
+
+		<widget name="description" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=90,repeat=3,always=0,oneshot=1,startdelay=8000" 
+			position="1070,130" size="730,790" font="Regular350;40" foregroundColor="textHigh" backgroundColor="barBg" transparent="1" halign="left" valign="top" zPosition="4"/>
+
+
+	
 		
-		<widget name="timerlist" position="268,272" size="1372,480"  itemHeight="120" rowSplit="40" rowHeight="60" iconMargin="5" satPosLeft="300"  setEventNameFont="Regular350;34" setServiceNameFont="Regular350;34" setFont="Regular350;36" foregroundColor="settings_lists_font_foregroundcolor" foregroundColorSelected="settings_lists_font_foregroundcolor_selected" backgroundColorSelected="menubackground" backgroundColor="menubackground"  selectionPixmap="settings/List_On_1740x120.png" backgroundPixmap="settings/List_Off_1740x120.png" transparent="1" scrollbarMode="showOnDemand"/>		
-		
-		<widget name="description" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=90,repeat=3,always=0,oneshot=1,startdelay=8000" position="268,773" size="1372,42" font="Narrow500;38" foregroundColor="settings_title_font_color" backgroundColor="menubackground" transparent="1" halign="center" valign="center" zPosition="4"/>
-		<panel name="background6_4_Buttons"/>
 	</screen>	
 	
 	<screen name="TimerEntry" position="fill" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="AutoTimerTemplate2"/>
-			
-		<eLabel position="608,876" size="305,60" backgroundColor="Button_Background" zPosition="7"/>
-		<eLabel position="1021,876" size="305,60" backgroundColor="Button_Background" zPosition="7"/>
-	<eLabel position="268,864" size="1372,87" backgroundColor="settings_panel_background" zPosition="6"/>
-			<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="269,769" size="1,1"  backgroundColor="menubackground" transparent="0" alphatest="blend" zPosition="20" />	
-			
-	
-		
-		<eLabel position="618,886" size="6,40" backgroundColor="bar_red" zPosition="8"/>
-		<widget name="canceltext" position="608,876" size="305,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="8"/>
-		<eLabel position="1031,886" size="6,40" backgroundColor="bar_green" zPosition="8"/>
-		<widget name="oktext" position="1021,876" size="305,60" font="Regular250;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="8"/>
-					
-			
+    <panel name="Glan_ConfigMenuScreen"/>
+    <widget name="config" position="240,160" size="1200,770" font="Regular350;40" itemHeight="70" selectionPixmap="common/listBg1200x70Focus.png" foregroundColor="textMid" foregroundColorSelected="textHigh" backgroundColor="infoBoxBgMain" transparent="1" enableWrapAround="1" scrollbarMode="showNever" zPosition="2"/>
+    <widget source="description" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=3,always=0,oneshot=1,startdelay=5000,wrap" position="1460,180" size="360,340" font="Regular350;40" foregroundColor="textHigh" backgroundColor="infoBoxBgSide" transparent="1" halign="left" valign="top" zPosition="2"/>
+
+    <!-- -->
+    <widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="269,769" size="1,1" backgroundColor="infoBoxBgMain" transparent="0" alphatest="blend" zPosition="20"/>
+    <widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="common/key_text.png" position="1460,750" size="80,50" zPosition="1" transparent="1" alphatest="on">
+      <convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="VKeyIcon" render="Label" conditional="VKeyIcon"  position="1560,750" zPosition="1" foregroundColor="textMid" text="Keyboard" font="Regular500;40" size="180,70" transparent="1">
+      <convert type="ConditionalShowHide"/>
+    </widget>
+    <!-- -->
+
+    <panel name="Glan_ConfigMenuColourButtons"/>
+
 	</screen>
 	
 	

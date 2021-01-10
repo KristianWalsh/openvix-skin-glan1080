@@ -24,7 +24,7 @@
 
   <screen name="Glan_HorizontalColourButtonsEPG">
     <ePixmap position="870,730" size="250,40" pixmap="common/redPromptBg.png" alphatest="blend" zPosition="3"/>
-    <ePixmap position="1030,730" size="250,40" pixmap="common/greenPromptBg.png" alphatest="blend" zPosition="3"/>
+    <ePixmap position="1130,730" size="250,40" pixmap="common/greenPromptBg.png" alphatest="blend" zPosition="3"/>
     <ePixmap position="1390,730" size="250,40" pixmap="common/yellowPromptBg.png" alphatest="blend" zPosition="3"/>
     <ePixmap position="1650,730" size="250,40" pixmap="common/bluePromptBg.png" alphatest="blend" zPosition="3"/>
     <widget name="key_red" position="910,730" size="210,40" font="Regular500;30" foregroundColor="redButtonText" backgroundColor="solidBg" transparent="1" halign="left" valign="center" noWrap="1" zPosition="4"/>
@@ -44,10 +44,13 @@
     <widget name="key_blue" position="1680,1000" size="210,40" font="Regular500;30" foregroundColor="blueButtonText" backgroundColor="solidBg" transparent="1" halign="left" valign="center" noWrap="1" zPosition="4"/>
   </screen>
 
-
-  <screen name="Glan_HorizontalColourButtonsBottomBar">
+  <screen name="Glan_BottomBar">
     <eLabel position="0,960" size="1920,120" backgroundColor="barBg" zPosition="-10"/>
     <eLabel position="0,959" size="1920,1" backgroundColor="hairline" zPosition="-10"/>
+    </screen>
+
+  <screen name="Glan_HorizontalColourButtonsBottomBar">
+    <panel name="Glan_BottomBar" />
     <ePixmap position="120,1000" size="250,40" pixmap="common/redPromptBg.png" alphatest="blend" zPosition="3"/>
     <ePixmap position="380,1000" size="250,40" pixmap="common/greenPromptBg.png" alphatest="blend" zPosition="3"/>
     <ePixmap position="640,1000" size="250,40" pixmap="common/yellowPromptBg.png" alphatest="blend" zPosition="3"/>
@@ -70,18 +73,18 @@
   </screen>
 
   <screen name="Glan_ConfigMenuColourButtons">
-    <ePixmap position="1460,870" size="80,50" pixmap="buttons/key_red.png" alphatest="blend" zPosition="2"/>
+    <ePixmap position="1460,870" size="80,50" pixmap="common/key_red.png" alphatest="blend" zPosition="2"/>
     <widget source="key_red" render="Label" position="1560,870" size="190,50" objectTypes="key_red,StaticText" font="Regular500;40" foregroundColor="redButtonText" backgroundColor="barBg" transparent="1" halign="left" valign="center" noWrap="1" zPosition="2"/>
 
-    <ePixmap position="1460,810" size="80,50" pixmap="buttons/key_green.png" alphatest="blend" zPosition="2"/>
+    <ePixmap position="1460,810" size="80,50" pixmap="common/key_green.png" alphatest="blend" zPosition="2"/>
     <widget source="key_green" render="Label" position="1560,810" size="190,50" objectTypes="key_green,StaticText" font="Regular500;40" foregroundColor="greenButtonText" backgroundColor="barBg" transparent="1" halign="left" valign="center" noWrap="1" zPosition="12"/>
     
-    <ePixmap objectTypes="key_yellow,StaticText" position="1460,750" size="80,50" pixmap="buttons/key_yellow.png" alphatest="blend" zPosition="2">
+    <ePixmap objectTypes="key_yellow,StaticText" position="1460,750" size="80,50" pixmap="common/key_yellow.png" alphatest="blend" zPosition="2">
       <convert type="ConditionalShowHide"/>
     </ePixmap>
     <widget source="key_yellow" render="Label" position="1560,750" size="190,50" objectTypes="key_yellow,StaticText" font="Regular500;40" foregroundColor="yellowButtonText" backgroundColor="barBg" transparent="1" halign="left" valign="center" noWrap="1" zPosition="12"/>
     
-    <ePixmap objectTypes="key_blue,StaticText" position="1460,690" size="80,50" pixmap="buttons/key_blue.png" alphatest="blend" zPosition="2">
+    <ePixmap objectTypes="key_blue,StaticText" position="1460,690" size="80,50" pixmap="common/key_blue.png" alphatest="blend" zPosition="2">
       <convert type="ConditionalShowHide"/>
     </ePixmap>
     <widget source="key_blue" render="Label" position="1560,690" size="190,50" objectTypes="key_blue,StaticText" font="Regular500;40" foregroundColor="blueButtonText" backgroundColor="barBg" transparent="1" halign="left" valign="center" noWrap="1" zPosition="12"/>
@@ -93,8 +96,8 @@
   </screen>
 
   <screen name="Glan_ConfigMenuRedGreenButtons">
-    <ePixmap position="1460,870" size="80,50" pixmap="buttons/key_red.png" alphatest="blend" zPosition="2"/>
-    <ePixmap position="1460,810" size="80,50" pixmap="buttons/key_green.png" alphatest="blend" zPosition="2"/>
+    <ePixmap position="1460,870" size="80,50" pixmap="common/key_red.png" alphatest="blend" zPosition="2"/>
+    <ePixmap position="1460,810" size="80,50" pixmap="common/key_green.png" alphatest="blend" zPosition="2"/>
   </screen>
 
   <screen name="Glan_ConfigMenuOkCancelButtons">
@@ -103,7 +106,7 @@
   </screen>
 
   <screen name="Glan_ConfigMenuScreenRedExitButtonPrompt">
-    <ePixmap position="1460,870" size="80,50" pixmap="buttons/key_red.png" alphatest="blend" zPosition="2"/>
+    <ePixmap position="1460,870" size="80,50" pixmap="common/key_red.png" alphatest="blend" zPosition="2"/>
     <eLabel text="Exit" position="1560,870" size="190,50" font="Regular500;40" foregroundColor="redButtonText" backgroundColor="barBg" transparent="1" halign="left" valign="center" noWrap="1" zPosition="2"/>
   </screen>
 

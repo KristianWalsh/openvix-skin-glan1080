@@ -21,28 +21,28 @@
 	<include filename="/usr/share/enigma2/Glan/skin_Glan_Menus.xml"/>
 
 	<fonts>
-	<font name="Regular250" filename="/usr/share/enigma2/Glan/fonts/Barlow-ExtraLight.ttf" scale="100" />
-	<font name="Regular350" filename="/usr/share/enigma2/Glan/fonts/Barlow-Light.ttf" scale="100" />
-	<font name="Regular500" filename="/usr/share/enigma2/Glan/fonts/Barlow-Regular.ttf" scale="100" />
-	<font name="Regular600" filename="/usr/share/enigma2/Glan/fonts/Barlow-Medium.ttf" scale="100" />
-	<font name="Narrow250" filename="/usr/share/enigma2/Glan/fonts/BarlowSemiCondensed-ExtraLight.ttf" scale="100" />
-	<font name="Narrow350" filename="/usr/share/enigma2/Glan/fonts/BarlowSemiCondensed-Light.ttf" scale="100" />
-	<font name="Narrow500" filename="/usr/share/enigma2/Glan/fonts/BarlowSemiCondensed-Regular.ttf" scale="100" />
+	<font name="Regular250" filename="/usr/share/enigma2/Glan/fonts/Barlow-ExtraLight-Tabular.ttf" scale="100" />
+	<font name="Regular350" filename="/usr/share/enigma2/Glan/fonts/Barlow-Light-Tabular.ttf" scale="100" />
+	<font name="Regular500" filename="/usr/share/enigma2/Glan/fonts/Barlow-Regular-Tabular.ttf" scale="100" />
+	<font name="Regular600" filename="/usr/share/enigma2/Glan/fonts/Barlow-Medium-Tabular.ttf" scale="100" />
+	<font name="Narrow250" filename="/usr/share/enigma2/Glan/fonts/BarlowSemiCondensed-ExtraLight-Tabular.ttf" scale="100" />
+	<font name="Narrow350" filename="/usr/share/enigma2/Glan/fonts/BarlowSemiCondensed-Light-Tabular.ttf" scale="100" />
+	<font name="Narrow500" filename="/usr/share/enigma2/Glan/fonts/BarlowSemiCondensed-Regular-Tabular.ttf" scale="100" />
 	
 	
 		<!-- Fonts, by role -->
 
-	<font name="Regular" filename="/usr/share/enigma2/Glan/fonts/Barlow-Regular.ttf" scale="100" />
-	<font name="menulist" filename="/usr/share/enigma2/Glan/fonts/Barlow-Regular.ttf" scale="100" />
-	<font name="channelselectionservice" filename="/usr/share/enigma2/Glan/fonts/Barlow-Regular.ttf" scale="100" />
-	<font name="channelselectionevent" filename="/usr/share/enigma2/Glan/fonts/Barlow-Regular.ttf" scale="100" />
-	<font name="screentitle" filename="/usr/share/enigma2/Glan/fonts/Barlow-Regular.ttf" scale="100" />
-	<font name="infobar" filename="/usr/share/enigma2/Glan/fonts/Barlow-Regular.ttf" scale="100" />
-	<font name="clock" filename="/usr/share/enigma2/Glan/fonts/Barlow-Regular.ttf" scale="100" />
-	<font name="date" filename="/usr/share/enigma2/Glan/fonts/Barlow-Regular.ttf" scale="100" />
-	<font name="buttons" filename="/usr/share/enigma2/Glan/fonts/Barlow-Regular.ttf" scale="100" />
-	<font name="Subtitlefont" filename="/usr/share/enigma2/Glan/fonts/Barlow-Regular.ttf" scale="100" />
-
+	<font name="Regular" filename="/usr/share/enigma2/Glan/fonts/Barlow-Regular-Tabular.ttf" scale="100" />
+	<font name="menulist" filename="/usr/share/enigma2/Glan/fonts/Barlow-Regular-Tabular.ttf" scale="100" />
+	<font name="channelselectionservice" filename="/usr/share/enigma2/Glan/fonts/Barlow-Regular-Tabular.ttf" scale="100" />
+	<font name="channelselectionevent" filename="/usr/share/enigma2/Glan/fonts/Barlow-Regular-Tabular.ttf" scale="100" />
+	<font name="screentitle" filename="/usr/share/enigma2/Glan/fonts/Barlow-Regular-Tabular.ttf" scale="100" />
+	<font name="infobar" filename="/usr/share/enigma2/Glan/fonts/Barlow-Regular-Tabular.ttf" scale="100" />
+	<font name="clock" filename="/usr/share/enigma2/Glan/fonts/Barlow-Regular-Tabular.ttf" scale="100" />
+	<font name="date" filename="/usr/share/enigma2/Glan/fonts/Barlow-Regular-Tabular.ttf" scale="100" />
+	<font name="buttons" filename="/usr/share/enigma2/Glan/fonts/Barlow-Regular-Tabular.ttf" scale="100" />
+	<font name="Subtitlefont" filename="/usr/share/enigma2/Glan/fonts/Barlow-Regular-Tabular.ttf" scale="100" />
+	
 
 		<!-- style aliases -->	
 	<alias name="Body" font="menulist" size="40" height="84" />

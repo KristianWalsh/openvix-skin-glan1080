@@ -334,14 +334,14 @@
   <screen name="MovieSelection" flags="wfNoBorder" position="fill" backgroundColor="transparent">
     <panel name="Glan_ClockAndTopBar" />
     <eLabel position="120,120" size="120,810" backgroundColor="infoBoxBgSide" zPosition="0"/>
-    <eLabel position="240,120" size="710,810" backgroundColor="infoBoxBgMain" zPosition="0"/>
-    <eLabel position="120,930" size="830,1" backgroundColor="hairline" zPosition="0"/>
+    <eLabel position="240,120" size="810,810" backgroundColor="infoBoxBgMain" zPosition="0"/>
+    <eLabel position="120,930" size="930,1" backgroundColor="hairline" zPosition="0"/>
 
-    <eLabel position="990,120" size="830,80" backgroundColor="focusBg" zPosition="0"/>
-    <eLabel position="990,200" size="120,100" backgroundColor="piconBoxBg" zPosition="0"/>
-    <eLabel position="990,300" size="120,630" backgroundColor="infoBoxBgSide" zPosition="0"/>
-    <eLabel position="1110,200" size="710,730" backgroundColor="infoBoxBgMain" zPosition="0"/>
-    <eLabel position="990,930" size="830,1" backgroundColor="hairline" zPosition="0"/>
+    <eLabel position="1090,120" size="730,80" backgroundColor="focusBg" zPosition="0"/>
+    <eLabel position="1090,200" size="120,100" backgroundColor="piconBoxBg" zPosition="0"/>
+    <eLabel position="1090,300" size="120,630" backgroundColor="infoBoxBgSide" zPosition="0"/>
+    <eLabel position="1210,200" size="610,730" backgroundColor="infoBoxBgMain" zPosition="0"/>
+    <eLabel position="1090,930" size="730,1" backgroundColor="hairline" zPosition="0"/>
 
     <!-- progress bg -->
     <!--	<eLabel position="1130,232" size="670,1" backgroundColor="accentMid" zPosition="1"/>
@@ -354,24 +354,28 @@
 
 
     <widget source="Title" render="Label" position="1100,0" size="800,90" font="Regular250;40" foregroundColor="textLow" backgroundColor="barBg" transparent="1" halign="right" valign="center" zPosition="2" />
-    <widget name="list" position="120,140" size="830,770" font="Narrow350;40" pbarShift="0" pbarHeight="5" pbarLargeWidth="120" pbarColour="accentHigh" pbarColourSeen="textLow" pbarColourRec="recordIndicator" partIconeShift="0" spaceIconeText="20" NumberOfRows="11" iconsWidth="120" durationWidth="1" trashShift="5" dirShift="5" spaceRight="0" dateWidth="260" selectionPixmap="common/listBg1200x70Focus.png" backgroundPixmap="common/blank.png" foregroundColor="textMid" foregroundColorSelected="textHigh" backgroundColor="infoBoxBgMain" transparent="1" enableWrapAround="1" scrollbarMode="showNever" zPosition="1"/>
-    <!-- deliberately don't clip to 810px because render="Label" seems to ignore noWrap=1 below... more enigma bullshit.. -->
-    <widget source="Service" render="Label" position="1010,120" size="920,80" font="Regular500;50" foregroundColor="textHigh" backgroundColor="focusBg" halign="left" valign="center" transparent="1" noWrap="1" zPosition="2">
+    <widget name="list" position="120,120" size="930,770" font="Narrow350;40" 
+      pbarShift="0" pbarHeight="5" pbarLargeWidth="120" pbarColour="accentHigh" pbarColourSeen="textLow" pbarColourRec="recordIndicator" 
+      partIconeShift="0" spaceIconeText="20" NumberOfRows="12" iconsWidth="120" durationWidth="-320" trashShift="5" dirShift="5" spaceRight="10" dateWidth="265" selectionPixmap="common/listBg1200x70Focus.png" backgroundPixmap="common/blank.png" foregroundColor="textMid" foregroundColorSelected="textHigh" backgroundColor="infoBoxBgMain" transparent="1" enableWrapAround="1" scrollbarMode="showNever" zPosition="1">
+    </widget>
+  
+    <!-- deliberately don't clip to 710px because render="Label" seems to ignore noWrap=1 below... more enigma bullshit.. -->
+    <widget source="Service" render="Label" position="1110,120" size="920,80" font="Regular500;50" foregroundColor="textHigh" backgroundColor="focusBg" halign="left" valign="center" transparent="1" noWrap="1" zPosition="2">
       <convert type="EventName">Name</convert>
     </widget>
 
-    <widget source="Service" render="Picon" position="1000,220" size="100,60" alphatest="blend" backgroundColor="transparent" transparent="1" zPosition="2">
+    <widget source="Service" render="Picon" position="1100,220" size="100,60" alphatest="blend" backgroundColor="transparent" transparent="1" zPosition="2">
       <convert type="MovieInfo">RecordServiceRef</convert>
     </widget>
-    <widget source="Service" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=140,repeat=3,always=0,oneshot=1,startdelay=10000,wrap" position="1130,210" size="670,720" font="Regular250;40" foregroundColor="textMid" backgroundColor="infoBoxBgSide" transparent="1" halign="left" valign="top" zPosition="2">
+    <widget source="Service" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=140,repeat=3,always=0,oneshot=1,startdelay=10000,wrap" position="1230,210" size="570,720" font="Regular250;40" foregroundColor="textMid" backgroundColor="infoBoxBgSide" transparent="1" halign="left" valign="top" zPosition="2">
       <convert type="MovieInfo">MetaDescription</convert>
     </widget>
 
-    <widget source="Service" render="Label" position="990,880" size="70,50" font="Regular250;40" foregroundColor="textMid" backgroundColor="barBg" transparent="1" halign="right" valign="top" zPosition="2">
+    <widget source="Service" render="Label" position="1090,880" size="70,50" font="Regular250;40" foregroundColor="textMid" backgroundColor="barBg" transparent="1" halign="right" valign="top" zPosition="2">
       <convert type="EventTime">Duration</convert>
       <convert type="ClockToText">InMinutes</convert>
     </widget>
-    <eLabel text="min" position="1062,895" size="50,30" font="Regular250;25" foregroundColor="textMid" backgroundColor="barBg" transparent="1" halign="left" valign="top" zPosition="2" />
+    <eLabel text="min" position="1162,895" size="50,30" font="Regular250;25" foregroundColor="textMid" backgroundColor="barBg" transparent="1" halign="left" valign="top" zPosition="2" />
 
     <panel name="Glan_HorizontalColourButtonsBottomBar" />
   </screen>
@@ -424,41 +428,44 @@
   </screen>
 
   <screen name="AudioSelection" position="fill" flags="wfNoBorder" backgroundColor="transparent">
-    <ePixmap position="640,237" size="641,615" pixmap="common/Audio_Info_Panel.png" zPosition="-1"/>
-    <widget source="Title" render="Label" position="694,237" size="586,60" font="Regular600;34" foregroundColor="settings_title_font_color" backgroundColor="menubackground" transparent="1" halign="left" valign="center" zPosition="2"/>
-    <widget name="config" position="694,311" size="586,170" font="Regular600;32" itemHeight="85" foregroundColor="eventcolor" backgroundColor="menubackground" transparent="1" halign="left" valign="center" scrollbarMode="showOnDemand" zPosition="2"/>
-    <widget source="key_red" render="Pixmap" pixmap="buttons/red.png" position="650,340" size="35,35" alphatest="blend" zPosition="4">
+    <panel name="Glan_ClockAndTopBar"/>
+    <eLabel position="120,120" size="120,280" backgroundColor="infoBoxBgSide" zPosition="0"/>
+    <eLabel position="240,120" size="830,280" backgroundColor="infoBoxBgMain" zPosition="0"/>
+    <eLabel position="120,400" size="950,1" backgroundColor="hairline" zPosition="0"/>
+
+    <eLabel position="120,410" size="120,600" backgroundColor="infoBoxBgSide" zPosition="0"/>
+    <eLabel position="240,410" size="830,600" backgroundColor="infoBoxBgMain" zPosition="0"/>
+    <eLabel position="120,1010" size="950,1" backgroundColor="hairline" zPosition="0"/>
+
+    <widget source="Title" render="Label" position="280,0" size="1500,90" font="Regular350;50" foregroundColor="textHigh" backgroundColor="barBg" transparent="1" valign="center" halign="left" noWrap="1" zPosition="2" />
+
+    <widget name="config" position="240,120" size="830,280" itemHeight="70" font="Regular250;40" foregroundColor="textMid" foregroundColorSelected="textHigh" backgroundColor="menubackground" backgroundPixmap="common/blank.png" selectionPixmap="common/listBg1200x70Focus.png" transparent="1" scrollbarMode="showOnDemand" zPosition="2"></widget>
+
+<!--    itemHeight="70" foregroundColor="eventcolor" backgroundColor="menubackground" transparent="1" halign="left" valign="center" scrollbarMode="showOnDemand" zPosition="2"/>
+-->    <widget source="key_red" render="Pixmap" pixmap="common/key_red.png" position="140,130" size="80,50" alphatest="blend" zPosition="4">
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget source="key_green" render="Pixmap" pixmap="buttons/green.png" position="650,422" size="35,35" alphatest="blend" zPosition="4">
+    <widget source="key_green" render="Pixmap" pixmap="common/key_green.png" position="140,200" size="80,50" alphatest="blend" zPosition="4">
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget source="key_yellow" render="Pixmap" pixmap="buttons/key_yellow.png" position="22,189" size="67,48" alphatest="blend" zPosition="2">
+    <widget source="key_yellow" render="Pixmap" pixmap="common/key_yellow.png" position="140,270" size="80,50" alphatest="blend" zPosition="2">
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget source="key_blue" render="Pixmap" pixmap="buttons/key_blue.png" position="22,238" size="67,48" alphatest="blend" zPosition="2">
+    <widget source="key_blue" render="Pixmap" pixmap="common/key_blue.png" position="140,340" size="80,50" alphatest="blend" zPosition="2">
       <convert type="ConditionalShowHide"/>
     </widget>
-    <widget source="streams" render="Listbox" position="640,563" size="641,255" foregroundColor="settings_title_font_color" foregroundColorSelected="black" backgroundColor="menubackground" backgroundPixmap="common/List_Off_800x100.png" selectionPixmap="common/List_On_800x100.png" transparent="1" scrollbarMode="showOnDemand" zPosition="2">
+    <widget source="streams" render="Listbox" position="120,410" size="950,600" foregroundColor="textMid" foregroundColorSelected="textHigh" backgroundColor="menubackground" backgroundPixmap="common/blank.png" selectionPixmap="common/listBg120+1200x70Focus.png" transparent="1" scrollbarMode="showOnDemand" zPosition="2">
       <convert type="TemplatedMultiContent">
 				{"templates":
-				{"default": (85, [
-				MultiContentEntryText(pos = (0, 0), size = (35, 85), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # key,
-				MultiContentEntryText(pos = (10, 0), size = (90, 85), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # number,
-				MultiContentEntryText(pos = (100, 0), size = (150, 85), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3), # description,
-				MultiContentEntryText(pos = (340, 0), size = (360, 85), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4), # language,
-				MultiContentEntryText(pos = (590, 0), size = (25, 85), font = 1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 5), # selection,
-				], True, "showNever"),
-				"notselected": (85, [
-				MultiContentEntryText(pos = (0, 0), size = (35, 85), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # key,
-				MultiContentEntryText(pos = (10, 0), size = (90, 85), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # number,
-				MultiContentEntryText(pos = (100, 0), size = (150, 85), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3), # description,
-				MultiContentEntryText(pos = (340, 0), size = (360, 85), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4), # language,
-				MultiContentEntryText(pos = (590, 0), size = (25, 85), font = 1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 5), # selection,
-				], False, "showNever")
+				{"default": (70, [
+				MultiContentEntryText(pos = (0, 5), size = (30, 60), font = 2, flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER, text = 5), # selection,
+				MultiContentEntryText(pos = (10, 0), size = (110, 70), font = 3, flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER, text = 2), # key-number,
+				MultiContentEntryText(pos = (815, 0), size = (110, 70), font = 1, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 3), # audio format,
+				MultiContentEntryText(pos = (135, 0), size = (680, 70), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4) # language,
+				], True, "showNever")
 				},
-				"fonts": [gFont("menulist", 34), gFont("menulist", 34)],
-				"itemHeight": 85
+				"fonts": [gFont("Regular350", 40), gFont("Regular250", 30), gFont("Regular600", 20), gFont("Regular600", 40)],
+				"itemHeight": 70
 				}
       </convert>
     </widget>
@@ -478,25 +485,8 @@
 
 
   <screen name="EPGSelection" flags="wfNoBorder" position="fill" backgroundColor="transparent">
-    <panel name="Halo_Info_NavigationBar"/>
-    <panel name="Halo_EpgSelection_BG"/>
-    <widget source="Event" render="Label" position="940,700" size="900,60" font="Regular350;45" foregroundColor="#DDDDDD" backgroundColor="menubackground" transparent="1" halign="left" valign="center" zPosition="3">
-      <convert type="EventName">Name</convert>
-    </widget>
-    <widget source="Event" render="Label" position="860,830" size="1015,195" font="Regular350;38" foregroundColor="#DDDDDD" backgroundColor="menubackground" transparent="1" halign="left" valign="top" zPosition="3">
-      <convert type="EventName">FullDescription</convert>
-    </widget>
-    <widget name="lab1" position="0,580" size="800,500" font="Regular;18" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0"/>
-    <widget name="number" position="0,580" size="800,500" zPosition="5" backgroundColor="transparent" transparent="0" font="Regular;24" borderColor="black" borderWidth="2" valign="center" halign="center"/>
-    <widget name="list" position="0,580" size="800,500" backgroundColor="infobar_panel" foregroundColorEvent="channel_list_event" foregroundColorEventSelected="black" foregroundColorServiceSelected="black" foregroundColorServiceNotAvail="grey" foregroundColorMarked="maincolour" foregroundColorMarkedSelected="red" backgroundColorMarked="maincolour" backgroundColorMarkedSelected="'#292D31" serviceItemHeight="100" serviceNumberFont="channelselectionservice;34" serviceNameFont="Regular500;32" serviceInfoFont="Regular500;34" progressBarWidth="60" fieldMargins="50" transparent="1" scrollbarMode="showNever" zPosition="10" backgroundPixmap="common/List_Off_800x100.png" selectionPixmap="common/List_On_800x100.png"/>
-    <widget source="Event" render="Label" position="820,685" size="100,77" font="Narrow350;70" foregroundColor="#F8AC37" backgroundColor="menubackground" transparent="1" halign="center" valign="center" noWrap="1" zPosition="2">
-      <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Format:%H</convert>
-    </widget>
-    <widget source="Event" render="Label" position="830,770" size="90,44" font="Narrow350;38" foregroundColor="#AAAAAA" backgroundColor="menubackground" transparent="1" halign="center" valign="center" noWrap="1" zPosition="2">
-      <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Format:%M</convert>
-    </widget>
+    <panel name="QuickEPG"/>
+    <widget name="lab1" position="0,0" size="1,1" font="Regular;40" transparent="1"/>
   </screen>
 
 
@@ -609,7 +599,7 @@
 
     <!-- -->
     <widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="269,769" size="1,1" backgroundColor="infoBoxBgMain" transparent="0" alphatest="blend" zPosition="20"/>
-    <widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="buttons/key_text.png" position="1730,735" zPosition="1" size="35,25" transparent="1" alphatest="on">
+    <widget source="VKeyIcon" render="Pixmap" conditional="VKeyIcon" pixmap="common/key_text.png" position="1730,735" zPosition="1" size="35,25" transparent="1" alphatest="on">
       <convert type="ConditionalShowHide"/>
     </widget>
     <!-- -->
@@ -634,10 +624,10 @@
     <widget source="introduction" render="Label" position="1020,650" size="790,40" font="Regular350;40" foregroundColor="textMid" backgroundColor="infoBoxBgMain" transparent="1" halign="center" valign="center" zPosition="2"/>
     <widget name="SkinList" render="Listbox" textOffset="140,10" position="120,160" size="830,770" font="Regular350;40" itemHeight="70" selectionPixmap="common/listBg120+1200x70Focus.png" backgroundColorSelected="focusBg" foregroundColorSelected="textHigh" foregroundColor="textMid" backgroundColor="infoBoxBgMain" halign="left" valign="center" transparent="1" scrollbarMode="showNever" enableWrapAround="0" zPosition="3" />
 
-    <ePixmap position="1020,860" size="80,50" pixmap="buttons/key_red.png" alphatest="blend" zPosition="2"/>
+    <ePixmap position="1020,860" size="80,50" pixmap="common/key_red.png" alphatest="blend" zPosition="2"/>
     <widget source="key_red" render="Label" position="1120,860" size="190,50" objectTypes="key_red,StaticText" font="Regular500;40" foregroundColor="redButtonText" backgroundColor="infoBoxBgMain" transparent="1" halign="left" valign="center" noWrap="1" zPosition="2"/>
 
-    <ePixmap position="1020,800" size="80,50" pixmap="buttons/key_green.png" alphatest="blend" zPosition="2"/>
+    <ePixmap position="1020,800" size="80,50" pixmap="common/key_green.png" alphatest="blend" zPosition="2"/>
     <widget source="key_green" render="Label" position="1120,800" size="190,50" objectTypes="key_green,StaticText" font="Regular500;40" foregroundColor="greenButtonText" backgroundColor="infoBoxBgMain" transparent="1" halign="left" valign="center" noWrap="1" zPosition="12"/>
   </screen>
 
@@ -782,11 +772,10 @@
     <widget name="text" position="210,270" size="1520,60" font="Narrow500;42" foregroundColor="settings_title_font_color" backgroundColor="menubackground" transparent="1" halign="left" valign="center" zPosition="4"/>
   </screen>
   <screen name="ChoiceBox" position="fill" flags="wfNoBorder" backgroundColor="transparent">
-    <eLabel position="190,330" size="1540,520" backgroundColor="settings_panel_background" zPosition="-1"/>
-    <eLabel position="190,270" size="1540,60" backgroundColor="settings_panel_titlebar" zPosition="1"/>
-    <widget name="text" position="0,0" size="520,55" font="Regular;26"/>
-    <widget name="list" position="190,330" size="1540,504" font="Regular350;36" halign="center" valign="center" itemHeight="84" selectionPixmap="settings/1740x84_On.png" backgroundPixmap="settings/1740x84_Off.png" foregroundColor="settings_lists_font_foregroundcolor" foregroundColorSelected="settings_lists_font_foregroundcolor_selected" backgroundColor="menubackground" transparent="1" enableWrapAround="1" scrollbarMode="showNever" zPosition="4"/>
-    <panel name="title2"/>
+    <panel name="Glan_WideMenu"/>
+    <widget name="list" position="120,160" size="1320,770" itemHeight="70" selectionPixmap="common/listBg120+1200x70Focus.png" backgroundPixmap="common/Blank.png" foregroundColor="textMid" foregroundColorSelected="textHigh" backgroundColor="infoBoxBgMain" transparent="1" enableWrapAround="1" scrollbarMode="showNever" zPosition="4">
+    </widget>
+    <widget name="text" position="0,0" size="0,0" transparent="1" font="Regular;40"/>
   </screen>
   <screen name="EventViewContextMenu" position="fill" flags="wfNoBorder" backgroundColor="transparent">
     <eLabel position="190,330" size="1540,520" backgroundColor="settings_panel_background" zPosition="-1"/>
@@ -1167,6 +1156,7 @@
     <widget name="statusicon" position="center,center" size="361,361" pixmaps="pvr/pvrstate/play.png,pvr/pvrstate/pause.png,pvr/pvrstate/stop.png,pvr/pvrstate/forward.png,pvr/pvrstate/backward.png,pvr/pvrstate/slow.png,pvr/pvrstate/blank.png" zPosition="12" alphatest="blend"/>
     <!--<widget name="speed" position="600,990" size="150,60" font="infobar;40" foregroundColor="grey" backgroundColor="menubackground" transparent="1" halign="left" valign="center" zPosition="2" />-->
   </screen>
+
   <screen name="NumericalTextInputHelpDialog2" position="0,0" zPosition="1" size="1372,308" backgroundColor="window-bg" flags="wfNoBorder" transparent="1">
     <ePixmap position="0,0" size="1372,308" pixmap="common/keyboard_BG.png" zPosition="20"/>
     <widget name="key1" position="22,14" size="411,60" font="Regular350;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="center" valign="center" transparent="0" zPosition="21"/>
@@ -1182,8 +1172,8 @@
     <widget name="key0" position="483,230" size="411,60" font="Regular350;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="21"/>
     <widget name="help2" position="935,230" size="411,60" font="Regular350;24" foregroundColor="eventcolor" backgroundColor="menubackground" halign="center" valign="center" transparent="1" zPosition="21"/>
   </screen>
-  <screen name="NumericalTextInputHelpDialog" position="center,767" zPosition="2" size="1372,308" backgroundColor="window-bg" flags="wfNoBorder" transparent="0">
-    <ePixmap position="0,0" size="1372,308" pixmap="common/keyboard_BG.png" zPosition="-1"/>
+  <screen name="NumericalTextInputHelpDialog" position="0,0" zPosition="2" size="0,0" backgroundColor="barBg" flags="wfNoBorder" transparent="1">
+
     <widget name="key1" position="22,14" size="411,60" font="Regular350;30" halign="center" valign="center" transparent="1"/>
     <widget name="key2" position="483,14" size="411,60" font="Regular350;30" halign="center" valign="center" transparent="1"/>
     <widget name="key3" position="935,14" size="411,60" font="Regular350;30" halign="center" valign="center" transparent="1"/>
