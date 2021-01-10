@@ -216,33 +216,34 @@
   <screen name="GraphicalEPG" position="fill" flags="wfNoBorder" backgroundColor="transparent" zPosition="1">
     <eLabel position="0,0" size="1920,90" backgroundColor="barBg" zPosition="1"/>
     <eLabel position="0,780" size="240,300" backgroundColor="piconBoxBg" zPosition="1"/>
-    <eLabel position="240,780" size="120,300" backgroundColor="infoBoxBgSide" zPosition="1"/>
-    <eLabel position="360,780" size="1240,300" backgroundColor="barBg" zPosition="1"/>
-    <eLabel position="1600,780" size="320,300" backgroundColor="infoBoxBgSide" zPosition="1"/>
+    <eLabel position="240,780" size="120,300" backgroundColor="barBg" zPosition="1"/>
+    <eLabel position="360,780" size="1560,300" backgroundColor="infoBoxBgMain" zPosition="1"/>
     <eLabel position="0,779" size="1920,1" backgroundColor="hairline" zPosition="1"/>
+    <eLabel position="0,710" size="1920,78" backgroundColor="solidBgLow" zPosition="1"/>
+    
     <!-- # BBUK  search by number mod  -->
     <widget name="searchnumber" position="0,972" size="1920,108" zPosition="5" textOffset="45,0" font="menulist;42" foregroundColor="#E66A4A" backgroundColor="#2C2C2C" transparent="0" valign="center" halign="center"/>
     <!-- END-->
     <widget name="bouquetlist" position="0,0" size="1276,300" font="Regular350;40" itemHeight="60" selectionPixmap="settings/1740x84_On.png" backgroundPixmap="settings/1740x84_Off.png" foregroundColor="settings_lists_font_foregroundcolor" foregroundColorSelected="settings_lists_font_foregroundcolor_selected" backgroundColor="menubackground" scrollbarMode="showNever" transparent="1" zPosition="6"/>
 
     <!-- Colour buttons -->
-    <panel position="1640,820" name="Glan_VerticalColourButtonsBottomRight" />
+    <panel position="870,730" name="Glan_HorizontalColourButtonsEPG" />
 
-    <widget source="Event" render="Label" position="378,780" size="1190,90" font="Regular350;70" foregroundColor="textHigh" backgroundColor="barBg" halign="left" valign="top" transparent="1" noWrap="1" zPosition="2">
+    <widget source="Event" render="Label" position="378,780" size="1542,90" font="Regular350;70" foregroundColor="textHigh" backgroundColor="infoBoxBgMain" halign="left" valign="top" transparent="1" noWrap="1" zPosition="2">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="Event" render="Label" position="380,865" size="1190,210" font="Regular350;40" foregroundColor="textMid" backgroundColor="barBg" halign="left" valign="top" transparent="1" zPosition="2">
+    <widget source="Event" render="Label" position="380,865" size="1190,210" font="Regular350;40" foregroundColor="textMid" backgroundColor="infoBoxBgMain" halign="left" valign="top" transparent="1" zPosition="2">
       <convert type="EventName">FullDescription</convert>
     </widget>
-    <widget source="Event" render="Label" position="240,810" size="110,50" font="Regular250;40" foregroundColor="textHigh" backgroundColor="infoBoxBgSide" transparent="0" halign="right" valign="top" noWrap="1" zPosition="2">
+    <widget source="Event" render="Label" position="240,810" size="110,50" font="Regular250;40" foregroundColor="textHigh" backgroundColor="barBg" transparent="1" halign="right" valign="top" noWrap="1" zPosition="2">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget source="Event" render="Label" position="240,1015" size="70,50" font="Regular250;40" foregroundColor="textMid" backgroundColor="infoBoxBgSide" transparent="1" halign="right" valign="top" zPosition="2">
+    <widget source="Event" render="Label" position="240,1015" size="70,50" font="Regular250;40" foregroundColor="textMid" backgroundColor="barBg" transparent="1" halign="right" valign="top" zPosition="2">
       <convert type="EventTime">Duration</convert>
       <convert type="ClockToText">InMinutes</convert>
     </widget>
-    <eLabel text="min" position="312,1030" size="50,30" font="Regular250;25" foregroundColor="textMid" backgroundColor="infoBoxBgSide" transparent="1" halign="left" valign="top" zPosition="2" />
+    <eLabel text="min" position="312,1030" size="50,30" font="Regular250;25" foregroundColor="textMid" backgroundColor="barBg" transparent="1" halign="left" valign="top" zPosition="2" />
 
 
     <widget source="Service" render="Picon" position="20,930" size="200,120" alphatest="blend" backgroundColor="transparent" transparent="1" zPosition="2">
